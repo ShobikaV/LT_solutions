@@ -3,6 +3,7 @@ class Solution:
         a1=[]
         a2=[]
         ans=[]
+        '''
         for i in set(nums1):
             if i not in nums2:
                 a1.append(i)
@@ -10,6 +11,12 @@ class Solution:
         for i in set(nums2):
             if i not in nums1:
                 a2.append(i)
+        ans.append(a2)
+        return ans
+        '''
+        a1=set(nums1)-set(nums2)
+        a2=set(nums2)-set(nums1)
+        ans.append(a1)
         ans.append(a2)
         return ans
                 
