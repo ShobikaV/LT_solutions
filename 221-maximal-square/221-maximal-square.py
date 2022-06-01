@@ -2,11 +2,9 @@ class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         m=len(matrix)
         n=len(matrix[0])
-        matrix=[[int(matrix[i][j]) for j in range(n)]for i in range(m)]
-        t=[]
-        for i in matrix:
-            t.append(i)
-        #print(t)
+        t=[[int(matrix[i][j]) for j in range(n)]for i in range(m)]
+        
+        print(t)
         for i in range(m-2,-1,-1):
             for j in range(n-2,-1,-1):
                 if t[i][j]==1:
