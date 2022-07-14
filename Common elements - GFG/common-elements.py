@@ -2,14 +2,9 @@
 
 class Solution:
     def commonElements (self,A, B, C, n1, n2, n3):
-        B=set(B)
-        A=set(A)
-        C=set(C)
-        x=B.intersection(C)
-        y=A.intersection(x)
-        y=list(y)
-        y.sort()
-        return(y)
+        ans=list(set(A)&set(B)&set(C))
+        ans.sort()
+        return ans
                     
 
 #{ 
