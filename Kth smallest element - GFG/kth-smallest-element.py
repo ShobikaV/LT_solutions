@@ -9,7 +9,7 @@ class Solution:
         k : find kth smallest element and return using this function
         '''
         arr.sort()
-        return arr[k-1]
+        return(arr[k-1])
 
 #{ 
 #  Driver Code Starts
