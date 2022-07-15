@@ -11,7 +11,7 @@ class Solution:
 		    mini=min(l)
 		    ans=max(ans,maxi)
 		return ans
-
+		    
 #{ 
 #  Driver Code Starts
 #Initial Template for Python 3
