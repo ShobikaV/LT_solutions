@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        if not head:
+        if head==None:
             return
         temp=head
         prev=head
