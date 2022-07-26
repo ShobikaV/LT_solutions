@@ -9,9 +9,7 @@ class Solution:
         if head==None:
             return False
         slow,fast=head,head.next
-        while True:
-            if fast==None or fast.next==None:
-                return False
+        while fast and fast.next:
             if fast==slow:
                 return True
             slow=slow.next
